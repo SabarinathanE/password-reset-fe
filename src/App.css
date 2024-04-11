@@ -1,0 +1,71 @@
+.form-section{
+  display:flex;
+  flex-direction: column;
+  gap:12px;
+  margin: 20px 20px 0 20px;
+  padding:20px 20px 0 20px;
+}
+.msg-section{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+input{
+  text-align: center;
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+  .form-section{
+      display:flex;
+      flex-direction: column;
+      gap:12px;
+      margin: 20px 80px 0 80px;
+      padding:20px 80px 0 80px;
+  }
+  .msg-section{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+}
+
+@media screen and (min-width:801px) and (max-width:1000px) {
+  .form-section{
+      display:flex;
+      flex-direction: column;
+      gap:12px;
+      margin: 20px 100px 0 100px;
+      padding:20px 100px 0 100px;
+  }
+  .msg-section{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+}
+
+@media screen and (min-width:1001px)  {
+  .form-section{
+      display:flex;
+      flex-direction: column;
+      gap:12px;
+      margin: 20px 170px 0 170px;
+      padding:20px 170px 0 170px;
+  }
+  .msg-section{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+}
