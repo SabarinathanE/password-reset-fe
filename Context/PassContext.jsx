@@ -7,7 +7,7 @@ export const AppCtx=createContext(null);
 //children property used so that all the states and values passed can be used by all components
 export default function AppContext({children}){
 
-    const [email,setEmail]=useState("");
+    const [user,setUser]=useState("");
     const [password,setPassword]=useState("");
     const [err,setErr]=useState("");
     const [msg,setMsg]=useState("");
@@ -15,7 +15,7 @@ export default function AppContext({children}){
     return(
         <AppCtx.Provider
         value={{
-            email,setEmail,password,setPassword,err,setErr,msg,setMsg
+            user,setUser,password,setPassword,err,setErr,msg,setMsg
         }}
         >
             {children}

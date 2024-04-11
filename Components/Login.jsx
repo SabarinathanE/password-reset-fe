@@ -6,7 +6,7 @@ export default function Login(){
 
     //clearing all the field values and mounting only once when the page is opened
     useEffect(()=>{
-        setEmail("");
+        setUser("");
         setPassword("");
         setMsg("");
         setErr("");
@@ -14,12 +14,12 @@ export default function Login(){
 
     
     //context states and values is imported
-    const {email,setEmail,password,setPassword,err,setErr,msg,setMsg}=useContext(AppCtx);
+    const {user,setUser,password,setPassword,err,setErr,msg,setMsg}=useContext(AppCtx);
 
     //login function to fetch data
     function handleLogin(){
         const details={
-            email,
+            user,
             password,
         }
         loginUser(details).then((data)=>{
@@ -36,7 +36,7 @@ export default function Login(){
     //reset function to fetch reset link
     function handleReset(){
         const details={
-            email,
+            user,
         }
         reset(details).then((data)=>{
             if(data.error){
@@ -53,7 +53,7 @@ export default function Login(){
            
         <form className="form-section">
         <div className="form-group">
-            <input type="email" className="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp" value={email} onChange={(event)=>setEmail(event.target.value)} required />
+            <input type="Email" className="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp" value={user} onChange={(event)=>setUser(event.target.value)} required />
         </div>
         <div className="form-group">
             <input type="password" className="form-control" placeholder="Password" id="exampleInputPassword1" value={password} onChange={(event)=>setPassword(event.target.value)}/>
